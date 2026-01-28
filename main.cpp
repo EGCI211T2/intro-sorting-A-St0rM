@@ -27,8 +27,13 @@ int main(int argc, char * argv[]) {
     cout<<"Before sorting:";
     display(a,N);
     
-    sort(a,N);
+    //sort(a,N);
     cout<<"After sorting:";
+    //display(a,N);
+
+
+    cout << "Selection Sorting";
+    selectionSort(a,N);
     display(a,N);
     
     delete[] a;
