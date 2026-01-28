@@ -6,7 +6,7 @@ run: $(DEPS)
 	 ./$(DEPS)  $(var)
 
 run1: $(DEPS)
-	./$(DEPS)  8 5 3 9 1
+	./$(DEPS)  3 432 1 3 4 32 3
 
 clean: $(DEPS)
 	 rm $(DEPS)
