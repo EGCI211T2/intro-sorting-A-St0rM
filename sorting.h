@@ -56,7 +56,6 @@ void insertionSort(int *a, int N){
 
         for(i=N-1;i>=0;i--){
             if(newNumber>a[i]) break;
-            display(a,N);
             a[i+1]=a[i];
         }
        
