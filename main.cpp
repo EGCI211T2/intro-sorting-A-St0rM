@@ -37,7 +37,7 @@ int main(int argc, char * argv[]) {
     //display(a,N);
 
     cout << "After insertion Sorting";
-    selectionSort(a,N);
+    insertionSort(a,N);
     display(a,N);
     
     delete[] a;
