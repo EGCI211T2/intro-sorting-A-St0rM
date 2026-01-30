@@ -35,17 +35,16 @@ void sort(int *a, int N){
 
 void selectionSort(int *a, int N){
     int i, j, loc;
-
+    int *p;
     for(j = 0; j < N-1; j++){
-        int min=a[j];
-        loc = j;
+        p = &a[j]; // points  to minimum location
+        
         for(i=j+ 1; i<N; i++){
-            if(min > a[i]){
-                min = a[i];
-                loc = i;
+            if(*p > a[i]){
+                p = &a[i];
             }
         }
-        swap(a[j], a[loc]);
+        swap(a[j], *p);
     }
 }
 
