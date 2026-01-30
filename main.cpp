@@ -33,6 +33,10 @@ int main(int argc, char * argv[]) {
 
 
     cout << "After Selection Sorting";
+    //selectionSort(a,N);
+    //display(a,N);
+
+    cout << "After insertion Sorting";
     selectionSort(a,N);
     display(a,N);
     

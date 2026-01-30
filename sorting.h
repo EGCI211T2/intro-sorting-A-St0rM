@@ -2,6 +2,7 @@ void swap(int &a,int &b);
 void sort(int *a,int N);
 void display(int *a,int N);
 void selectionSort(int *a, int N);
+void insertaionSort(int *a, int N);
 
 void display(int *a, int N){
     //array[0]
@@ -45,6 +46,22 @@ void selectionSort(int *a, int N){
             }
         }
         swap(a[j], *p);
+    }
+}
+
+void insertaionSort(int *a, int N){
+    int i,j, newNumber;
+    for(j=0; j < N; j++){
+        newNumber= a[j];
+
+        for(i=N-1;i>=0;i--){
+            if(newNumber>a[i]) break;
+            display(a,N);
+            a[i+1]=a[i];
+        }
+       
+        a[i+1]=newNumber;
+        display(a,N);
     }
 }
 
