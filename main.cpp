@@ -28,11 +28,11 @@ int main(int argc, char * argv[]) {
     display(a,N);
     
     //sort(a,N);
-    cout<<"After sorting:";
+    cout<<"After bubble sorting:";
     //display(a,N);
 
 
-    cout << "Selection Sorting";
+    cout << "After Selection Sorting";
     selectionSort(a,N);
     display(a,N);
     
